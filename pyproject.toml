@@ -5,9 +5,10 @@ description = ""
 authors = ["Wesley Mendes <wesley@wesleymendes.com.br>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "3.9.7"
 fastapi = "^0.68.1"
 uvicorn = "^0.15.0"
+numpy = "^1.21.2"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.9.2"
