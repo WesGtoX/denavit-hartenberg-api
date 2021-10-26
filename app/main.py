@@ -7,6 +7,11 @@ from app.utils import multiply_matrix
 app = FastAPI()
 
 
+@app.get("/")
+def dh():
+    return {"dh": "Denavit-Hartenberg API"}
+
+
 @app.post("/calculate-dh/")
 async def calculate_dh(dh_list: List[DenavitHartenberg]):
     dh_calc, x, y, z = multiply_matrix(dh_list)
