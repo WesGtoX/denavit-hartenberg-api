@@ -1,11 +1,27 @@
 from typing import List
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 
 from app.model import DenavitHartenberg
 from app.utils import multiply_matrix
 from app.docs import RESPONSES_EXAMPLE
 
 app = FastAPI()
+
+
+origins = [
+    'https://dh.wesleymendes.com.br',
+    'https://www.dh.wesleymendes.com.br',
+    'https://denavit-hartenberg.netlify.app',
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get('/', responses={200: RESPONSES_EXAMPLE.get('dh')})
