@@ -14,6 +14,7 @@
 
 <p align="center">
   <img alt="Denavit-Hartenberg API CI" src="https://github.com/WesGtoX/denavit-hartenberg-api/actions/workflows/fastapi-app.yml/badge.svg" />
+  <img alt="codecov" src="https://codecov.io/gh/WesGtoX/denavit-hartenberg-api/branch/main/graph/badge.svg?token=CXVI4FZPTM" />
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/wesgtox/denavit-hartenberg-api?style=plastic" />
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/wesgtox/denavit-hartenberg-api?style=plastic" />
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/wesgtox/denavit-hartenberg-api?style=plastic" />
